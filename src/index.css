@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Outer container box */
+.app-box {
+  width: 500px;
+  margin: 40px auto;
+  padding: 30px 20px;
+
+  border: 3px solid #b30000;
+  border-radius: 12px;
+
+  background: #fff8f8; /* light soft pink background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Title + top input */
+.input-area {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-text {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #b30000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.currency-input {
+  width: 70%;
+  height: 35px;
+  font-size: 18px;
+  padding: 5px 10px;
+
+  border: 2px solid #b30000;
+  border-radius: 6px;
+  background: white;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* From/To area */
+.currency-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.from-label,
+.to-label {
+  font-weight: bold;
+  color: #b30000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.from-currency-select select,
+.to-currency-select select {
+  width: 120px;
+  height: 38px;
+
+  border: 2px solid #b30000;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 5px;
+  appearance: none;
+  background: #fffefe;
+
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Bottom output + reset */
+.output-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.currency-output {
+  width: 70%;
+  height: 35px;
+  font-size: 18px;
+  padding: 5px 10px;
+
+  border: 2px solid #b30000;
+  border-radius: 6px;
+  background: white;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset button styling */
+.reset-button {
+  width: 160px;
+  padding: 12px;
+  font-size: 20px;
+  border: 2px solid #b30000;
+  color: #b30000;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #ffe2e2;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
